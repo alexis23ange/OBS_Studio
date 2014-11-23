@@ -1,0 +1,14 @@
+﻿Build started 2014-11-23 4:52:17 PM.
+     1>Project "C:\Users\Matthew\Downloads\OBS_Studio\libobs-d3d11\libobs-d3d11.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1604,5): warning : The referenced project 'D:/obs/build5/ZERO_CHECK.vcxproj' does not exist.
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1604,5): warning : The referenced project 'D:/obs/build5/libobs/libobs.vcxproj' does not exist.
+     1>CustomBuild:
+         Building Custom Rule D:/obs-studio-0.6.4/libobs-d3d11/CMakeLists.txt
+         CMake is re-running because D:\obs\build5\libobs-d3d11\CMakeFiles\generate.stamp dependency file is missing.
+     1>CUSTOMBUILD : CMake error : The source directory "D:/obs-studio-0.6.4" does not exist.
+         Specify --help for usage, or press the help button on the CMake GUI.
+     1>Done Building Project "C:\Users\Matthew\Downloads\OBS_Studio\libobs-d3d11\libobs-d3d11.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.20

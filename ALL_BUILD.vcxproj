@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{6882E32D-A1FC-4BD9-8180-056CB80D6D01}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\obs-studio-0.6.4\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/obs-studio-0.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/obs-studio-0.6.4/CMakeLists.txt;D:\obs-studio-0.6.4\CMakeLists.txt;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCCompiler.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsHelpers.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsCpack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;D:\obs-studio-0.6.4\cmake\Modules\FindCXX11.cmake;D:\obs-studio-0.6.4\cmake\Modules\CopyMSVCBins.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibx264.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibfdk.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\build5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/obs-studio-0.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/obs-studio-0.6.4/CMakeLists.txt;D:\obs-studio-0.6.4\CMakeLists.txt;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCCompiler.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsHelpers.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsCpack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;D:\obs-studio-0.6.4\cmake\Modules\FindCXX11.cmake;D:\obs-studio-0.6.4\cmake\Modules\CopyMSVCBins.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibx264.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibfdk.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\build5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/obs-studio-0.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/obs-studio-0.6.4/CMakeLists.txt;D:\obs-studio-0.6.4\CMakeLists.txt;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCCompiler.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsHelpers.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsCpack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;D:\obs-studio-0.6.4\cmake\Modules\FindCXX11.cmake;D:\obs-studio-0.6.4\cmake\Modules\CopyMSVCBins.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibx264.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibfdk.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\build5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/obs-studio-0.6.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/obs-studio-0.6.4/CMakeLists.txt;D:\obs-studio-0.6.4\CMakeLists.txt;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInitialize.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCCompiler.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeCXXCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;D:\obs\build5\CMakeFiles\3.1.0-rc2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCommonLanguageInclude.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsHelpers.cmake;D:\obs-studio-0.6.4\cmake\Modules\ObsCpack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPack.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CPackComponent.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;C:\Program Files (x86)\CMake\share\cmake-3.1\Templates\CPackConfig.cmake.in;D:\obs-studio-0.6.4\cmake\Modules\FindCXX11.cmake;D:\obs-studio-0.6.4\cmake\Modules\CopyMSVCBins.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibx264.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindLibfdk.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.3.2\5.3\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\build5\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/obs/build5/ZERO_CHECK.vcxproj">
+      <Project>D0FF58D9-F94D-4DE8-BCA4-ADFDE29C70C7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/deps/glad/glad.vcxproj">
+      <Project>5A9FF7CC-E3DE-4704-9969-4666A625BA7A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/image-source/image-source.vcxproj">
+      <Project>4A50522A-D2C3-4F9A-81F6-DAEAE0DB39F3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/deps/jansson/jansson.vcxproj">
+      <Project>55198D25-E9FF-4E54-B77B-667475BDCD21</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/libobs/libobs.vcxproj">
+      <Project>A4D927CA-A431-4951-AB24-C1ECC45C0EF0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/libobs-d3d11/libobs-d3d11.vcxproj">
+      <Project>2498811E-319F-4FA1-8C40-F368BBE45427</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/libobs-opengl/libobs-opengl.vcxproj">
+      <Project>8ABE9306-23B2-4C3D-A41F-D92998A83221</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/obs/obs.vcxproj">
+      <Project>2C7E319F-33D4-4701-90AD-1AC2138FA419</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/obs-ffmpeg/obs-ffmpeg.vcxproj">
+      <Project>525529D7-C23D-4D80-8CD1-4F9E0F3CE9BD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/obs-libfdk/obs-libfdk.vcxproj">
+      <Project>A884A39B-A595-4B61-870E-E69F4904C461</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/obs-outputs/obs-outputs.vcxproj">
+      <Project>145F90E5-80CB-4545-B4AF-AD9D0531D895</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/obs-x264/obs-x264.vcxproj">
+      <Project>E9372651-A9B6-4BFD-995F-D5DFA5447F07</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/rtmp-services/rtmp-services.vcxproj">
+      <Project>0815BCF8-4007-4C2E-AD49-B34634C5807D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/test/test-input/test-input.vcxproj">
+      <Project>61CC1BFD-BB87-4D25-8D03-185A747CF2F1</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/text-freetype2/text-freetype2.vcxproj">
+      <Project>4799EAFF-A8AB-494D-9D01-A9E561957984</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/deps/w32-pthreads/w32-pthreads.vcxproj">
+      <Project>2DCE5C6A-7B2E-48F8-9E9C-75F71560951F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/win-capture/win-capture.vcxproj">
+      <Project>480A30DD-03BC-448D-818C-267B7C4BE2B0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/win-dshow/win-dshow.vcxproj">
+      <Project>64E59C58-0EFE-463F-A7E4-C49BC8A2CB8F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/test/win/win-test.vcxproj">
+      <Project>2B31FD4A-AC4B-4EDC-BDCE-226165DEBA21</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/plugins/win-wasapi/win-wasapi.vcxproj">
+      <Project>ED4BE007-99A2-4A22-8496-4FE09DDE0859</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

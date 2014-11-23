@@ -1,0 +1,29 @@
+# CMake generation dependency list for this directory.
+D:/obs-studio-0.6.4/libobs/CMakeLists.txt
+D:/obs-studio-0.6.4/cmake/Modules/FindThreads.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckIncludeFiles.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckLibraryExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckSymbolExists.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+D:/obs-studio-0.6.4/cmake/Modules/FindFFMpeg.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPkgConfig.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindImageMagick.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPkgConfig.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+D:/obs-studio-0.6.4/libobs/obsconfig.h.in
+D:/obs-studio-0.6.4/libobs/LibObsConfig.cmake.in
+D:/obs-studio-0.6.4/libobs/LibObsConfig.cmake.in
+D:/obs-studio-0.6.4/libobs/LibObsConfigVersion.cmake.in

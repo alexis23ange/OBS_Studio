@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\obs-outputs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\rtmp-stream.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\flv-output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\flv-mux.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\amf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\cencode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\hashswf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\md5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\parseurl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\rtmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\amf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\bytes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\cencode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\dh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\dhgroups.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\handshake.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\http.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\rtmp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\obs-outputs\librtmp\rtmp_sys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\obs-studio-0.6.4\plugins\obs-outputs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7F36FCC4-063C-4319-971C-4D1BA6857509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F53BA803-020C-40CC-8D75-7A1371368A32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

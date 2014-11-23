@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\platform-windows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\obs-app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-interaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-properties.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-source-select.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-license-agreement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-status-bar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-basic-preview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-namedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-log-reply.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\window-remux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\properties-view.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\volume-control.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\obs\qt-wrappers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs\build5\obs\qrc_obs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs\build5\obs\obs_automoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\obs-app.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\platform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-main.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-settings.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-interaction.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-properties.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-source-select.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-license-agreement.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-status-bar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-transform.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-basic-preview.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-namedialog.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-log-reply.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\window-remux.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\properties-view.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\display-helpers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\volume-control.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\qt-display.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\obs\qt-wrappers.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_NameDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSLicenseAgreement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSLogReply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSBasic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSBasicTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSBasicSettings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSBasicSourceSelect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSBasicInteraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSBasicProperties.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs\build5\obs\ui_OBSRemux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\CMakeLists.txt" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\NameDialog.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSLicenseAgreement.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSLogReply.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSBasic.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSBasicTransform.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSBasicSettings.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSBasicSourceSelect.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSBasicInteraction.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSBasicProperties.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\OBSRemux.ui" />
+    <CustomBuild Include="D:\obs-studio-0.6.4\obs\forms\obs.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7F36FCC4-063C-4319-971C-4D1BA6857509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F53BA803-020C-40CC-8D75-7A1371368A32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

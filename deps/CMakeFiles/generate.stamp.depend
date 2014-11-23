@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+D:/obs-studio-0.6.4/deps/CMakeLists.txt
+D:/obs-studio-0.6.4/cmake/Modules/FindJansson.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPkgConfig.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake

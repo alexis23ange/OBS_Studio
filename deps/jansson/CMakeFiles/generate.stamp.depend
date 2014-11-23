@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+D:/obs-studio-0.6.4/deps/jansson/CMakeLists.txt
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckFunctionExists.cmake
+D:/obs-studio-0.6.4/deps/jansson/cmake/CheckFunctionKeywords.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckCSourceCompiles.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckIncludeFiles.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckTypeSize.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckIncludeFile.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CheckIncludeFileCXX.cmake
+D:/obs-studio-0.6.4/deps/jansson/jansson.pc.in
+D:/obs-studio-0.6.4/deps/jansson/cmake/jansson_config.h.cmake
+D:/obs-studio-0.6.4/deps/jansson/cmake/config.h.cmake

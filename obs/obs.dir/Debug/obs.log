@@ -1,0 +1,39 @@
+﻿Build started 2014-11-23 4:52:17 PM.
+     1>Project "C:\Users\Matthew\Downloads\OBS_Studio\obs\obs.vcxproj" on node 5 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1604,5): warning : The referenced project 'D:/obs/build5/ZERO_CHECK.vcxproj' does not exist.
+     1>C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1604,5): warning : The referenced project 'D:/obs/build5/libobs/libobs.vcxproj' does not exist.
+     1>PreBuildEvent:
+         setlocal
+         cd D:\obs\build5\obs
+         if %errorlevel% neq 0 goto :cmEnd
+         D:
+         if %errorlevel% neq 0 goto :cmEnd
+         "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/build5/obs/CMakeFiles/obs_automoc.dir/ Debug
+         if %errorlevel% neq 0 goto :cmEnd
+         :cmEnd
+         endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+         :cmErrorLevel
+         exit /b %1
+         :cmDone
+         if %errorlevel% neq 0 goto :VCEnd
+         :VCEnd
+     1>EXEC : CMake error : Error processing file: D:/obs/build5/obs/CMakeFiles/obs_automoc.dir/AutogenInfo.cmake
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: The command "setlocal
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: cd D:\obs\build5\obs
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: D:
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen D:/obs/build5/obs/CMakeFiles/obs_automoc.dir/ Debug
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: if %errorlevel% neq 0 goto :cmEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: :cmEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: :cmErrorLevel
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: exit /b %1
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: :cmDone
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: if %errorlevel% neq 0 goto :VCEnd
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets(122,5): error MSB3073: :VCEnd" exited with code -1.
+     1>Done Building Project "C:\Users\Matthew\Downloads\OBS_Studio\obs\obs.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.19

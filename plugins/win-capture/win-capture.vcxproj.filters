@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\win-capture\dc-capture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\win-capture\window-helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\win-capture\monitor-capture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\win-capture\window-capture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\obs-studio-0.6.4\plugins\win-capture\plugin-main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\win-capture\window-helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\obs-studio-0.6.4\plugins\win-capture\dc-capture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\obs-studio-0.6.4\plugins\win-capture\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7F36FCC4-063C-4319-971C-4D1BA6857509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{F53BA803-020C-40CC-8D75-7A1371368A32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

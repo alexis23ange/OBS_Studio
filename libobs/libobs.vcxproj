@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A4D927CA-A431-4951-AB24-C1ECC45C0EF0}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>libobs</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\build5\libobs\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libobs.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\build5\libobs\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libobs.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\build5\libobs\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libobs.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">obs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\build5\libobs\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libobs.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">obs</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;_DEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR="Debug";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;DEBUG=1;_DEBUG=1;_DEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR=\"Debug\";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/obs/build5/libobs/Debug/obs.dll D:/obs/build5/rundir/Debug/bin/64bit/obs.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/Debug -DOUTPUT=D:/obs/build5/libobs/pdbs -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/Debug -DOUTPUT=D:/obs/build5/rundir/Debug/bin/64bit -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory D:/obs-studio-0.6.4/libobs/data D:/obs/build5/rundir/Debug/data/libobs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/misc/ -DOUTPUT=D:/obs/build5/rundir/Debug/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/data/ -DOUTPUT=D:/obs/build5/rundir/Debug/data/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64/ -DOUTPUT=D:/obs/build5/rundir/Debug/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64/ -DOUTPUT=D:/obs/build5/rundir/Debug/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64r/ -DOUTPUT=D:/obs/build5/rundir/Debug/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64d/ -DOUTPUT=D:/obs/build5/rundir/Debug/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64r/ -DOUTPUT=D:/obs/build5/rundir/Debug/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Debug -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64d/ -DOUTPUT=D:/obs/build5/rundir/Debug/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\deps\w32-pthreads\Debug\w32-pthreads.lib;winmm.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avcodec.lib;..\deps\jansson\lib\Debug\jansson_d.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avformat.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avutil.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swscale.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swresample.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/obs/build5/libobs/Debug/obs.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/build5/libobs/Debug/obs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR="Release";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR=\"Release\";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/obs/build5/libobs/Release/obs.dll D:/obs/build5/rundir/Release/bin/64bit/obs.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/Release -DOUTPUT=D:/obs/build5/libobs/pdbs -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/Release -DOUTPUT=D:/obs/build5/rundir/Release/bin/64bit -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory D:/obs-studio-0.6.4/libobs/data D:/obs/build5/rundir/Release/data/libobs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/misc/ -DOUTPUT=D:/obs/build5/rundir/Release/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/data/ -DOUTPUT=D:/obs/build5/rundir/Release/data/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64/ -DOUTPUT=D:/obs/build5/rundir/Release/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64/ -DOUTPUT=D:/obs/build5/rundir/Release/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64r/ -DOUTPUT=D:/obs/build5/rundir/Release/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64d/ -DOUTPUT=D:/obs/build5/rundir/Release/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64r/ -DOUTPUT=D:/obs/build5/rundir/Release/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=Release -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64d/ -DOUTPUT=D:/obs/build5/rundir/Release/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\deps\w32-pthreads\Release\w32-pthreads.lib;winmm.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avcodec.lib;..\deps\jansson\lib\Release\jansson.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avformat.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avutil.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swscale.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swresample.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/obs/build5/libobs/Release/obs.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/build5/libobs/Release/obs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR="MinSizeRel";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR=\"MinSizeRel\";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/obs/build5/libobs/MinSizeRel/obs.dll D:/obs/build5/rundir/MinSizeRel/bin/64bit/obs.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/MinSizeRel -DOUTPUT=D:/obs/build5/libobs/pdbs -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/MinSizeRel -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/bin/64bit -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory D:/obs-studio-0.6.4/libobs/data D:/obs/build5/rundir/MinSizeRel/data/libobs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/misc/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/data/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/data/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64r/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64d/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64r/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=MinSizeRel -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64d/ -DOUTPUT=D:/obs/build5/rundir/MinSizeRel/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\deps\w32-pthreads\MinSizeRel\w32-pthreads.lib;winmm.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avcodec.lib;..\deps\jansson\lib\MinSizeRel\jansson.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avformat.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avutil.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swscale.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swresample.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/obs/build5/libobs/MinSizeRel/obs.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/build5/libobs/MinSizeRel/obs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHc- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR="RelWithDebInfo";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;HAVE_OBSCONFIG_H;UNICODE;_UNICODE;LIBOBS_EXPORTS;CMAKE_INTDIR=\"RelWithDebInfo\";libobs_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\obs-studio-0.6.4\additional_install_files\include;D:\obs-studio-0.6.4\libobs;D:\obs\build5\config;D:\obs-studio-0.6.4\deps\w32-pthreads\.;D:\obs-studio-0.6.4\deps\jansson\src;D:\obs\build5\deps\jansson\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy D:/obs/build5/libobs/RelWithDebInfo/obs.dll D:/obs/build5/rundir/RelWithDebInfo/bin/64bit/obs.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/RelWithDebInfo -DOUTPUT=D:/obs/build5/libobs/pdbs -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DFNAME=obs.dll -DINPUT=D:/obs/build5/libobs/RelWithDebInfo -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/bin/64bit -P D:/obs-studio-0.6.4/cmake/copy_on_debug_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_directory D:/obs-studio-0.6.4/libobs/data D:/obs/build5/rundir/RelWithDebInfo/data/libobs
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/misc/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/data/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/data/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=ALL -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64r/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/exec64d/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=Release";"MinSizeRel";"RelWithDebInfo -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64r/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -DCONFIG=RelWithDebInfo -DTARGET_CONFIGS=Debug -DINPUT=D:/obs-studio-0.6.4/additional_install_files/libs64d/ -DOUTPUT=D:/obs/build5/rundir/RelWithDebInfo/bin/64bit/ -P D:/obs-studio-0.6.4/cmake/copy_helper.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\deps\w32-pthreads\RelWithDebInfo\w32-pthreads.lib;winmm.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avcodec.lib;..\deps\jansson\lib\RelWithDebInfo\jansson.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avformat.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\avutil.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swscale.lib;D:\obs-studio-0.6.4\additional_install_files\lib64\..\lib64\swresample.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <ImportLibrary>D:/obs/build5/libobs/RelWithDebInfo/obs.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/obs/build5/libobs/RelWithDebInfo/obs.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\obs-studio-0.6.4\libobs\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/obs-studio-0.6.4/libobs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\libobs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/obs-studio-0.6.4/libobs/CMakeLists.txt;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;D:\obs-studio-0.6.4\cmake\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindFFMpeg.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindImageMagick.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\libobs\obsconfig.h.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfigVersion.cmake.in;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\obs\build5\libobs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/obs-studio-0.6.4/libobs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\libobs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/obs-studio-0.6.4/libobs/CMakeLists.txt;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;D:\obs-studio-0.6.4\cmake\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindFFMpeg.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindImageMagick.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\libobs\obsconfig.h.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfigVersion.cmake.in;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\obs\build5\libobs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/obs-studio-0.6.4/libobs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\libobs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/obs-studio-0.6.4/libobs/CMakeLists.txt;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;D:\obs-studio-0.6.4\cmake\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindFFMpeg.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindImageMagick.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\libobs\obsconfig.h.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfigVersion.cmake.in;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\obs\build5\libobs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/obs-studio-0.6.4/libobs/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/obs-studio-0.6.4 -BD:/obs/build5 --check-stamp-file D:\obs\build5\libobs\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/obs-studio-0.6.4/libobs/CMakeLists.txt;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;D:\obs-studio-0.6.4\cmake\Modules\FindThreads.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckIncludeFiles.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckLibraryExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CheckSymbolExists.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\cmake\Modules\FindFFMpeg.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindImageMagick.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPkgConfig.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeParseArguments.cmake;D:\obs-studio-0.6.4\libobs\obsconfig.h.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfig.cmake.in;D:\obs-studio-0.6.4\libobs\LibObsConfigVersion.cmake.in;D:\obs-studio-0.6.4\libobs\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\obs\build5\libobs\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\obs\build5\config\obsconfig.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-config.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\callback\calldata.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\callback\decl.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\callback\proc.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\callback\signal.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\plane.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\quat.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\input.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\axisang.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\shader-parser.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\effect.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\math-defs.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\matrix4.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\graphics.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\graphics-internal.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\device-exports.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\vec2.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\vec4.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\matrix3.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\vec3.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\math-extra.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\bounds.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\graphics\effect-parser.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\media-io-defs.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\video-io.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\audio-io.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\video-frame.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\format-conversion.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\audio-resampler.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\video-scaler.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\media-io\media-remux.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\array-serializer.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\utf8.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\base.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\text-lookup.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\vc\vc_inttypes.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\vc\vc_stdbool.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\vc\vc_stdint.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\bmem.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\c99defs.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\cf-parser.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\threading.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\cf-lexer.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\darray.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\circlebuf.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\dstr.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\serializer.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\config-file.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\lexer.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\util\platform.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-defs.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-avc.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-encoder.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-service.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-internal.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-ui.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-properties.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-data.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-interaction.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-module.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-scene.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-source.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-output.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs-ffmpeg-compat.h" />
+    <ClInclude Include="D:\obs-studio-0.6.4\libobs\obs.hpp" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\callback\calldata.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\callback\decl.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\callback\signal.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\callback\proc.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\graphics-ffmpeg.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\quat.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\effect-parser.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\axisang.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\vec4.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\vec2.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\texture-render.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\bounds.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\matrix3.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\matrix4.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\vec3.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\graphics.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\shader-parser.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\plane.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\effect.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\math-extra.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\graphics\graphics-imports.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\video-io.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\video-fourcc.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\video-matrices.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\audio-io.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\video-frame.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\format-conversion.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\audio-resampler-ffmpeg.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\video-scaler-ffmpeg.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\media-io\media-remux.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\array-serializer.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\base.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\platform.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\cf-lexer.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\bmem.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\config-file.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\lexer.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\dstr.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\utf8.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\text-lookup.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\cf-parser.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-windows.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\threading-windows.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\util\platform-windows.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-avc.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-encoder.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-service.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-source.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-output.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-properties.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-data.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-module.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-display.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-view.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-scene.c" />
+    <ClCompile Include="D:\obs-studio-0.6.4\libobs\obs-video.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/obs/build5/ZERO_CHECK.vcxproj">
+      <Project>D0FF58D9-F94D-4DE8-BCA4-ADFDE29C70C7</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/deps/jansson/jansson.vcxproj">
+      <Project>55198D25-E9FF-4E54-B77B-667475BDCD21</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/obs/build5/deps/w32-pthreads/w32-pthreads.vcxproj">
+      <Project>2DCE5C6A-7B2E-48F8-9E9C-75F71560951F</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

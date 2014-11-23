@@ -1,0 +1,50 @@
+# CMake generation dependency list for this directory.
+D:/obs-studio-0.6.4/CMakeLists.txt
+D:/obs/build5/CMakeFiles/3.1.0-rc2/CMakeSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeSystemSpecificInitialize.cmake
+D:/obs/build5/CMakeFiles/3.1.0-rc2/CMakeCCompiler.cmake
+D:/obs/build5/CMakeFiles/3.1.0-rc2/CMakeCXXCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeGenericSystem.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/Windows.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/WindowsPaths.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/Windows-MSVC.cmake
+D:/obs/build5/CMakeFiles/3.1.0-rc2/CMakeRCCompiler.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeRCInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeCXXInformation.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeCommonLanguageInclude.cmake
+D:/obs-studio-0.6.4/cmake/Modules/ObsHelpers.cmake
+D:/obs-studio-0.6.4/cmake/Modules/ObsCpack.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CPack.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CPackComponent.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Templates/CPackConfig.cmake.in
+C:/Program Files (x86)/CMake/share/cmake-3.1/Templates/CPackConfig.cmake.in
+D:/obs-studio-0.6.4/cmake/Modules/FindCXX11.cmake
+D:/obs-studio-0.6.4/cmake/Modules/CopyMSVCBins.cmake
+D:/obs-studio-0.6.4/cmake/Modules/FindLibx264.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPkgConfig.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+D:/obs-studio-0.6.4/cmake/Modules/FindLibfdk.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPkgConfig.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/FindPackageMessage.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
+C:/Qt/Qt5.3.2/5.3/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+C:/Qt/Qt5.3.2/5.3/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+C:/Qt/Qt5.3.2/5.3/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
+C:/Qt/Qt5.3.2/5.3/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake
+C:/Qt/Qt5.3.2/5.3/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake
+C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/CMakeParseArguments.cmake
